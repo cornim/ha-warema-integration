@@ -1,0 +1,1 @@
+"""Warmema wms webcontrol integration for shades"""

@@ -1,0 +1,8 @@
+{
+  "domain": "warema_wms_webcontrol",
+  "name": "Warema WMS Webcontrol",
+  "documentation": "",
+  "dependencies": [],
+  "codeowners": ["@cornim"],
+  "requirements": ["warema-wms-controller==0.2.3"]
+}
