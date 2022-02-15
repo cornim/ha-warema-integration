@@ -5,7 +5,7 @@ import voluptuous as vol
 
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.cover import (
-    CoverDevice, DEVICE_CLASS_SHADE, SUPPORT_OPEN, SUPPORT_CLOSE,
+    CoverEntity, DEVICE_CLASS_SHADE, SUPPORT_OPEN, SUPPORT_CLOSE,
     SUPPORT_SET_POSITION, ATTR_POSITION, PLATFORM_SCHEMA)
 
 _LOGGER = logging.getLogger(__name__)
@@ -26,7 +26,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices(WaremaShade(s, config[CONF_UPDATE_INTERVAL]) for s in shades)
 
 
-class WaremaShade(CoverDevice):
+class WaremaShade(CoverEntity):
     """Represents a warema shade"""
 
     def __init__(self, shade, update_interval: int):
