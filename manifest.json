@@ -5,5 +5,5 @@
   "documentation": "",
   "dependencies": [],
   "codeowners": ["@cornim"],
-  "requirements": ["warema-wms-controller==0.2.3"]
+  "requirements": ["warema-wms-controller==0.2.4"]
 }
